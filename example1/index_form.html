@@ -2,13 +2,19 @@
 <html>
 
 <head>
-    <title>Curso Vue.js</title>
+    <title>Vue.js</title>
 </head>
 
 <body>
     <div id="app">
-        <h1>{{ titulo | uppercase }}</h1>
-        <h2>{{ subtitulo | lowercase }}</h2>
+        <input type="text" name="name" placeholder="Introduce tu nombre" v-model="name">
+        <p>Tu nombre en mayúscula es: {{ name | uppercase }}</p>
+        <form>
+            <h2> ¿Cuáles son tus cursos favoritos? </h2>
+            <input v-model="cursos" type="checkbox" id="vue" value="vue">
+            <label for="vue">Curso de Vue.js</label>
+
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -16,18 +22,13 @@
         let app = new Vue({
             el: '#app',
             data: {
-                titulo: 'Title',
-                subtitulo: ' Vue.js'
+                name: ''
             },
             filters: {
                 uppercase: function(str) {
                     return str.toUpperCase()
-                },
-                lowercase: function(str) {
-                    return str.toLowerCase()
                 }
-
-            }
+            },
         })
     </script>
 </body>
