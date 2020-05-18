@@ -1,7 +1,7 @@
 h1. Tipo, MOdelo Vista, Al cambiar los modelos, se cambian las vista
 
-**v-show** no se puede utilizar con templates - con div funciona, se uss para mostrar y cambiar cosas según la iteración del usuario
-**v-if** sepuede usar con templates - Se usa cuando se tienen que mostrar cosas en el renderizado principal.
+**v-show** no se puede utilizar con templates - con div funciona, se uss para mostrar y cambiar cosas según la iteración del usuario. Usar cuando la propiedad se va a cambia constantemente, ya que, se evita cambiar el estado del DOM. Esta propiedad hace uso de `display: none`
+**v-if** sepuede usar con templates - Se usa cuando se tienen que mostrar cosas en el renderizado principal. Usar cuando no se va a cambiar la propiedad constantemente.
 **v-on** se puede quitar y poner un @
 
 **v-model** bind del modelo  para poder ser procesado
