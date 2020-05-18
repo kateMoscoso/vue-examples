@@ -8,6 +8,7 @@ let app = new Vue({
         changePercent: 0,
         price: 8400,
         color:'f4f4f4',
+        value: 0,
         pricesWithDays: [
           { day: "Lunes", value: 8400 },
           { day: "Martes", value: 7900 },
@@ -20,8 +21,24 @@ let app = new Vue({
       showPrices: false,
     };
   },
+  computed:{
+      title () {
+          return `${this.name} - ${this.symbol} `
+      },
+      convertedValue () {
+          if(!this.value){
+              return 0
+          }
+          return this.value / this.price
+      }
+  },
+  watch: {
+    showPrices (newValue, OldValue) {
+        console.log(newValue, OldValue)
+    }
+  },
   methods: {
-    toggleShowPrices() {
+    toggleShowPrices () {
       this.showPrices = !this.showPrices;
       this.color = this.color.split('')
       .reverse().join('')

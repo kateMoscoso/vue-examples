@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vue</title>
+    <title></title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div id="app" :style="{ background: '#'+color }">
+       
       <img
         v-on:mouseover="toggleShowPrices"
         v-on:mouseout="toggleShowPrices"
@@ -16,7 +17,7 @@
         :alt="name"
       />
       <h1 v-bind:class="changePercent > 0 ? 'green': 'red'">
-        {{ name }}
+        {{ title }}
         <span v-if="changePercent > 0"> 👍</span>
         <span v-else-if="changePercent < 0"> 👎</span>
         <span v-else> 🖖</span>
@@ -24,6 +25,8 @@
           {{ showPrices ? '🙈':'🐵' }}
         </span>
       </h1>
+      <input type="number" v-model="value">
+      <span> {{ convertedValue }}</span>
       <ul v-show="showPrices">
         <li
           class="uppercase"

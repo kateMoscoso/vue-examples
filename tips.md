@@ -15,3 +15,5 @@ Los atrbutos hay que ponerlos con - , no con mayúsculas y minúsculas.
 Antipatrones:
 * El padre el pasa las propiedades al hijo, esta mal pasarle las propiedades del padre, el hijo lo que tiene que hacer es emitir un evento que el padre tiene que escuchar y cambiar la propiedad.
 * 
+
+**watchers** -> a partir de una propiedad que cambia su valor, puedo cambiar otro valor
