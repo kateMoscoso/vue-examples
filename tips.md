@@ -17,3 +17,5 @@ Antipatrones:
 * 
 
 **watchers** -> a partir de una propiedad que cambia su valor, puedo cambiar otro valor
+
+**Slot** Html desde componente padre, es una api de distribución de contenido que permite que un componente padre le inyecte html a un componente hijo
