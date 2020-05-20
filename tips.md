@@ -26,3 +26,5 @@ Antipatrones:
 **Mounted** ya tengo disponible el DOM por lo que puedo obtener info del DOM
 
 **router-view**  es el que nos permite pintar las distintas vistas según navegamos por el router
+
+**fetch** https://developer.mozilla.org/es/docs/Web/API/Fetch_API
