@@ -19,3 +19,8 @@ Antipatrones:
 **watchers** -> a partir de una propiedad que cambia su valor, puedo cambiar otro valor
 
 **Slot** Html desde componente padre, es una api de distribución de contenido que permite que un componente padre le inyecte html a un componente hijo
+
+**LyfeCicle hooks**
+
+**Created** para obtener información de una api Rest
+**Mounted** ya tengo disponible el DOM por lo que puedo obtener info del DOM
