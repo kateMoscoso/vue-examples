@@ -24,3 +24,5 @@ Antipatrones:
 
 **Created** para obtener información de una api Rest
 **Mounted** ya tengo disponible el DOM por lo que puedo obtener info del DOM
+
+**router-view**  es el que nos permite pintar las distintas vistas según navegamos por el router
