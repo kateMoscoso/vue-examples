@@ -28,3 +28,10 @@ Antipatrones:
 **router-view**  es el que nos permite pintar las distintas vistas según navegamos por el router
 
 **fetch** https://developer.mozilla.org/es/docs/Web/API/Fetch_API
+
+
+**this.set**  Para resolver por problemas de reactividd en arrays y objetos. Esto pasa cuando se añade un valor después de que ya existan eston elementos
+`this.$set(exchange, 'url', res.exchangeUrl)`
+* `exchange` -> objeto
+* `'url' `->string propiedad
+* `res.exchangeUrl` -> valor propiedad
